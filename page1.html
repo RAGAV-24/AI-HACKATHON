@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Video Example</title>
+<style>
+ body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  #content {
+    text-align: center;
+    height :100px;
+    width:150px
+    color : white;
+    font-family : Arial, sans-serif;
+  }
+  .my-button {
+    width: 200px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    /* Additional styling properties can be added */
+  }
+</style>
+</head>
+<body>
+<video id="background-video" autoplay loop muted>
+  <source src="C:\xampp\htdocs\AI HACKATHON\backround1.mp4.mp4" type="video/mp4"> <!-- Replace 'your-video-url.mp4' with the URL or path of your video -->
+  Your browser does not support the video tag.
+</video>
+
+<div id="content">
+  <button class="my-button" onclick="location.href='login1.html'"> STUDENT LOGIN</button>
+  <button class="my-button" onclick="location.href='login1.html'"> FACULTY LOGIN</button>
+</div>
+</body>
+</html>
